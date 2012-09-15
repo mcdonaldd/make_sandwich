@@ -150,6 +150,7 @@ DEPENDENCIES
   devise
   guard-rspec
   jquery-rails
+  mail
   pg
   rails (= 3.2.8)
   rspec-rails

@@ -1,0 +1,15 @@
+<%= form_for @order do |f| %>
+<h1>  Pick a Sandwich: <h1>
+  <div class="field">
+    <%= f.select :sandwich, [['BLT','BLT'],['Rueben','Rueben'],['Po Boy','Po Boy']] %>
+   </div>
+
+
+  
+
+
+  <div class="actions">
+    <%= f.submit "ORDER", :class => 'btn btn-primary btn-large' %>
+  </div>
+
+<% end %>

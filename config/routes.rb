@@ -1,5 +1,5 @@
 MakeSandwich::Application.routes.draw do
-  root :to => 'order#new'
+  root :to => 'orders#new'
   # get "order/new"
   # 
   #   get "order/create"
@@ -9,6 +9,7 @@ MakeSandwich::Application.routes.draw do
   #   get "order/index"
 
   devise_for :users
+  resources :orders
   
 
   # The priority is based upon order of creation:
