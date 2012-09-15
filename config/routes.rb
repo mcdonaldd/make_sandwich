@@ -1,5 +1,15 @@
 MakeSandwich::Application.routes.draw do
+  root :to => 'order#new'
+  # get "order/new"
+  # 
+  #   get "order/create"
+  # 
+  #   get "order/show"
+  # 
+  #   get "order/index"
+
   devise_for :users
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
