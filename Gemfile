@@ -14,6 +14,7 @@ gem 'rest-client'
 group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'fabrication'
   
 end
 
