@@ -7,7 +7,7 @@ class Order < ActiveRecord::Base
     RestClient.post("https://api:key-26mzn1uxlj1zk7c5xnszcbbxgkhy1ne8"\
                      "@api.mailgun.net/v2/aboxofpaints.mailgun.org/messages",
                       :from => 'David McDonald <david@aboxofpaints.com>',
-                      :to => 'davmcdon@gmail.com',
+                      :to => 'make_sandwich@generalthings.com',
                       :subject => "A #{self.sandwich} has been ordered.",
                       :text => "A call to arms is at hand!\n
           #{self.user.email} ordered a #{self.sandwich}.\n
